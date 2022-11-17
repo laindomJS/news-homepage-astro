@@ -1,28 +1,23 @@
 ---
 import logo from '/images/logo.svg';
-import Hero from './Hero.astro';
 ---
 
-<header class="w-full min-h-screen py-10 md:py-10 px-4 md:px-12 relative">
-  <div class="flex items-center justify-between">
-    <img src={logo} alt="Logo of the notice portal">  
+<div class="flex items-center justify-between">
+  <img src={logo} alt="Logo of the notice portal">  
 
-    <ul id="menu" class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-10 bg-black md:bg-transparent absolute md:static top-0 right-0 h-full md:h-fit w-2/3 md:w-fit justify-center space-y-5 md:space-y-0 px-5 md:px-0 transition-all duration-300 translate-x-full md:translate-x-80">
+  <ul id="menu" class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-10 bg-black md:bg-transparent absolute md:static top-0 right-0 h-full md:h-fit w-2/3 md:w-fit justify-center space-y-5 md:space-y-0 px-5 md:px-0 transition-all duration-300 translate-x-full md:translate-x-80">
 
-      <button id="close" class="text-white absolute top-10 right-10 visible md:invisible">Close</button>
+    <button id="close" class="text-white absolute top-10 right-10 visible md:invisible">Close</button>
 
-      <li class="font-medium text-dark-grayish-blue transition-all duration-300 cursor-pointer hover:text-soft-orange">Home</li>
-      <li class="font-medium text-dark-grayish-blue transition-all duration-300 cursor-pointer hover:text-soft-orange">New</li>
-      <li class="font-medium text-dark-grayish-blue transition-all duration-300 cursor-pointer hover:text-soft-orange">Popular</li>
-      <li class="font-medium text-dark-grayish-blue transition-all duration-300 cursor-pointer hover:text-soft-orange">Trending</li>
-      <li class="font-medium text-dark-grayish-blue transition-all duration-300 cursor-pointer hover:text-soft-orange">Categories</li>
-    </ul>
+    <li class="font-medium text-dark-grayish-blue transition-all duration-300 cursor-pointer hover:text-soft-orange">Home</li>
+    <li class="font-medium text-dark-grayish-blue transition-all duration-300 cursor-pointer hover:text-soft-orange">New</li>
+    <li class="font-medium text-dark-grayish-blue transition-all duration-300 cursor-pointer hover:text-soft-orange">Popular</li>
+    <li class="font-medium text-dark-grayish-blue transition-all duration-300 cursor-pointer hover:text-soft-orange">Trending</li>
+    <li class="font-medium text-dark-grayish-blue transition-all duration-300 cursor-pointer hover:text-soft-orange">Categories</li>
+  </ul>
 
-    <button id="btn" class="md:invisible visible">Show</button>
-  </div>
-
-  <Hero />
-</header>
+  <button id="btn" class="md:invisible visible">Show</button>
+</div>
 
 <script>
   const btnOpen = document.querySelector('#btn');
