@@ -1,8 +1,9 @@
 ---
 import logo from '/images/logo.svg';
+import Hero from './Hero.astro';
 ---
 
-<header class="w-full min-h-screen py-10 px-6 md:px-12 relative">
+<header class="w-full min-h-screen py-10 md:py-10 px-4 md:px-12 relative">
   <div class="flex items-center justify-between">
     <img src={logo} alt="Logo of the notice portal">  
 
@@ -19,6 +20,8 @@ import logo from '/images/logo.svg';
 
     <button id="btn" class="md:invisible visible">Show</button>
   </div>
+
+  <Hero />
 </header>
 
 <script>

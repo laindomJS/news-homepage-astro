@@ -1,0 +1,36 @@
+---
+---
+
+<section class="w-full h-full flex flex-col flex-wrap md:flex-row pt-12">
+
+  <div class="w-full md:w-2/3">
+    <img id="imgsrc" class="w-full" src="" alt="Notice one!">
+
+    <div class="w-full flex flex-col md:flex-row items-center space-evenly">
+      <div class="md:w-2/3">
+        <h1 class="mt-4 font-bold text-4xl md:text-6xl leading-8 text-very-dark-blue">The Bright Future of Web 3.0?</h1>
+      </div>
+
+      <div class="md:w-3/4">
+        <p class="mt-4 text-sm md:text-lg leading-relaxed text-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hand of the people. But is it really fulfilling its promise?</p>
+        <button class="mt-4 w-40 h-10 uppercase font-medium text-off-white bg-soft-red tracking-widest transition-all duration-300 hover:bg-very-dark-blue">
+          Read More
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<script>
+  import imageHeroMobile from '/images/image-web-3-mobile.jpg';
+  import imageHeroDesktop from '/images/image-web-3-desktop.jpg';
+
+  const imgContainer = document.querySelector('#imgsrc');
+  
+  window.innerWidth <= 480 
+  ? imgContainer?.setAttribute('src', imageHeroMobile)
+  : imgContainer?.setAttribute('src', imageHeroDesktop)
+</script>
