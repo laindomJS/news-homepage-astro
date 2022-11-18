@@ -1,0 +1,13 @@
+---
+interface NewsModel {
+  title: string;
+  text: string;
+}
+
+const { title, text } = Astro.props;
+---
+
+<div class="border-b-2 border-white pb-4">
+  <h2 class="text-white mb-2 font-bold text-lg md:text-2xl transition-all duration-300 cursor-pointer hover:text-soft-orange">{title}</h2>
+  <p class="text-grayish-blue text-sm md:text-base">{text}</p>
+</div>
