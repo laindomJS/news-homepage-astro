@@ -1,0 +1,13 @@
+---
+import OthersNewsModel from '../model/OthersNewsModel.astro';
+
+import retroPCImage from '/images/image-retro-pcs.jpg';
+import topLaptops from '/images/image-top-laptops.jpg';
+import growGaming from '/images/image-gaming-growth.jpg';
+---
+
+<section class="px-4 md:px-10 py-4 w-full h-full flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 items-center">
+  <OthersNewsModel src={retroPCImage} num='01' title="Reviving Retro PCs" text="What happens when old PCs are given modern upgrades?" />
+  <OthersNewsModel src={topLaptops} num='02' title="Top 10 Laptops of 2022" text="Our best picks for various needs and budgets." />
+  <OthersNewsModel src={growGaming} num='03' title="The Growth of Gaming" text="How the pandemic has sparked fresh opportunities." />
+</section>

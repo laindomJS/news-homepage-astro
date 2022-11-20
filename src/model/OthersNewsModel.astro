@@ -1,0 +1,28 @@
+---
+interface Props {
+  src: string;
+  num: string;
+  title: string;
+  text: string;
+}
+
+const { src, num, title, text } = Astro.props;
+---
+
+
+
+<article class="w-80 md:w-96 h-fit p-4 flex items-center space-x-6">
+    
+  <div class="w-fit h-full">
+    <img class="h-full" src={src} alt="Retro PC Image">
+  </div>
+
+  <div>
+    <span class="font-bold text-grayish-blue block text-2xl">{num}</span>
+    <div class="text-left">
+      <h3 class="font-bold text-base md:text-lg transition-all duration-300 cursor-pointer hover:text-soft-red">{title}</h3>
+      <p class="text-dark-grayish-blue">{text}</p>
+    </div>
+  </div>
+
+</article>
